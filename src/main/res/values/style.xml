@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Projek" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/hitam</item>
+        <item name="colorPrimaryVariant">@color/merah</item>
+        <item name="colorOnPrimary">@color/putih</item>
+        <item name="colorPrimaryDark">@color/biru</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/abu</item>
+        <item name="colorSecondaryVariant">@color/abubu</item>
+        <item name="colorOnSecondary">@color/semihitam</item>
+        <item name="colorSecondaryContainer">@color/semiabu</item>
+        <item name="colorOnSecondaryContainer">@color/bubu</item>
+        <item name="colorContainer">@color/abulagi</item>
+        <item name="colorAccent">@color/navigasi</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

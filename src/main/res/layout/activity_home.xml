@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_home">
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="1500dp"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/timpp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textViewHi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="102dp"
+            android:fontFamily="@font/inter_extrabold"
+            android:text="Hai!"
+            android:textSize="18dp"
+            android:textColor="#FFFBFB"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:layout_toEndOf="@id/textViewHi"
+            android:textSize="18dp"
+            android:textColor="#FFFBFB"
+            android:textStyle="bold"
+            android:text="USERNAME"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="102dp"
+            android:fontFamily="@font/inter_extrabold"/>
+    <TextView
+            android:id="@+id/textViewLok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lokasi"
+            android:layout_marginStart="45dp"
+            android:layout_below="@id/textViewHi"
+            android:fontFamily="@font/robotobold"
+            android:textSize="12dp"
+            android:textColor="@color/putih"/>
+
+    <ImageView
+        android:id="@+id/latarhomelagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/latarhome"
+        android:layout_below="@id/textViewLok"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/pertalite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLok"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/pertalite"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pertamax"
+        android:src="@drawable/pertamax"
+        android:layout_toRightOf="@id/pertalite"
+        android:layout_marginTop="209dp"
+        android:layout_marginLeft="7dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pertamaxturbo"
+        android:src="@drawable/pertamaxturbo"
+        android:layout_toRightOf="@id/pertamax"
+        android:layout_marginTop="209dp"
+        android:layout_marginLeft="7dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/solar"
+        android:src="@drawable/solar"
+        android:layout_below="@id/pertalite"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="25dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/avgas"
+        android:src="@drawable/avgas"
+        android:layout_toRightOf="@id/solar"
+        android:layout_below="@id/pertamax"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="7dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/avtur"
+        android:src="@drawable/avtur"
+        android:layout_below="@id/pertamaxturbo"
+        android:layout_toRightOf="@id/avgas"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="7dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigasi"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_bar"
+        app:itemTextColor="@drawable/pilih"
+        android:background="@drawable/navigasi"
+        android:layout_height="wrap_content"/>
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+</RelativeLayout>

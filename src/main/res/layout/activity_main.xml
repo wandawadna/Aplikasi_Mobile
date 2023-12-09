@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Gasstation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/oval1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/oval"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ovalk"
+        android:layout_marginTop="300dp"
+        android:id="@+id/ovalkecil"
+        />
+
+    <ImageView
+        android:id="@+id/gs"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="50sp"
+        android:src="@drawable/gs" />
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="515dp"
+        android:text="Welcome to GaSton"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="30dp"
+        android:textColor="@color/hitam"/>
+    <TextView
+        android:id="@+id/kata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome"
+        android:text="The presence of the GaSton application can provide information in the form of the location of the nearest gas station"
+        android:padding="20dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppinsmedium"
+        android:textSize="15dp"
+        android:textColor="@color/abubu"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kata"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:width="300dp"
+        android:background="@drawable/button_shape"
+        android:text="LOGIN"
+        android:textColor="@color/putih"
+        android:onClick="login"/>
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:width="300dp"
+        android:background="@drawable/button_shape"
+        android:text="REGISTER"
+        android:textColor="@color/putih"
+        android:onClick="registrasi"/>
+
+</RelativeLayout>

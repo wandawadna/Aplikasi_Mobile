@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hitam">#000000</color>
+    <color name="merah">#A93333</color>
+    <color name="putih">#FFFFFF</color>
+    <color name="abu">#738599</color>
+    <color name="abubu">#5F5F5F</color>
+    <color name="semihitam">#171717</color>
+    <color name="semiabu">#8F92A1</color>
+    <color name="biru">#0002FC</color>
+    <color name="bubu">#738599</color>
+    <color name="abulagi">#9FADBC</color>
+    <color name="navigasi">#EA4949</color>
+</resources>
